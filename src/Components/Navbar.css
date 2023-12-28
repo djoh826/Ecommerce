@@ -1,0 +1,27 @@
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(124, 191, 236);
+  transition: height 0.1s linear;
+  height: 5rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.header.locked {
+  height: 4rem !important;
+}
+
+.links {
+  font-size: 2rem;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-shadow: 2px 2px 1px rgb(107, 107, 107);
+}
+
+.links:hover {
+  color: rgb(194, 194, 194);
+}

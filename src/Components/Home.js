@@ -1,3 +1,6 @@
+// import { Link } from 'react-router-dom';
+// import Navbar from './Navbar.js';
+
 function Home() {
   return (
     //Alert Banner
@@ -11,7 +14,37 @@ function Home() {
     //Feature 2
 
     //Footer
-    <h1>Test</h1>
+    <body>
+      <h1>This is the home page</h1>
+      <h1>This is the home page</h1>
+      <h1>This is the home page</h1>
+      <h1>This is the home page</h1>
+      <h1>This is the home page</h1>
+      <h1>This is the home page</h1>
+      <h1>This is the home page</h1>
+      <h1>This is the home page</h1>
+      <h1>This is the home page</h1>
+      <h1>This is the home page</h1>
+      <h1>This is the home page</h1>
+      <h1>This is the home page</h1>
+      <h1>This is the home page</h1>
+      <h1>This is the home page</h1>
+      <h1>This is the home page</h1>
+      <h1>This is the home page</h1>
+      <h1>This is the home page</h1>
+      <h1>This is the home page</h1>
+      <h1>This is the home page</h1>
+      <h1>This is the home page</h1>
+      <h1>This is the home page</h1>
+      <h1>This is the home page</h1>
+      <h1>This is the home page</h1>
+      <h1>This is the home page</h1>
+      <h1>This is the home page</h1>
+      <h1>This is the home page</h1>
+      <h1>This is the home page</h1>
+      <h1>This is the home page</h1>
+      <h1>This is the home page</h1>
+    </body>
   );
 }
 
