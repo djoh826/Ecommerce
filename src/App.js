@@ -7,6 +7,7 @@ import Apparel from './Components/Apparel';
 import Accessories from './Components/Accessories';
 import Furniture from './Components/Furniture';
 import Navbar from './Components/Navbar';
+import Footer from './Components/Footer';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="furniture" element={<Furniture />} />
         </Route>
       </Routes>
+      <Footer />
     </div>
   );
 }

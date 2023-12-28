@@ -25,3 +25,8 @@
 .links:hover {
   color: rgb(194, 194, 194);
 }
+
+.cart {
+  text-shadow: 2px 2px 1px rgb(107, 107, 107);
+  /* want a shadow here */
+}

@@ -35,7 +35,11 @@ function Navbar() {
         Furniture
       </Link>
       <Link to="/">
-        <img className="links" height={40} src={cartImage} alt="Cart"></img>
+        <img
+          className="links cart"
+          height={40}
+          src={cartImage}
+          alt="Cart"></img>
       </Link>
     </div>
   );
