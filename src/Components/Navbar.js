@@ -22,6 +22,9 @@ function Navbar() {
       <Link to="/">
         <img className="links" height={40} src={logoImage} alt="Logo"></img>
       </Link>
+      <Link to="/collections" className="links">
+        Shop All
+      </Link>
       <Link to="/sale" className="links">
         Sale
       </Link>

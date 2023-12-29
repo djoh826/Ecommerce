@@ -5,7 +5,7 @@
   background-color: rgb(124, 191, 236);
   transition: height 0.1s linear;
   height: 5rem;
-  position: fixed;
+  position: sticky;
   width: 100%;
   top: 0;
 }

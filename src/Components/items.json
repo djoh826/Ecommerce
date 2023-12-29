@@ -1,0 +1,136 @@
+[
+  {
+    "name": "Blanket 1",
+    "image": "images/blanket1.png",
+    "tags": ["furniture"],
+    "price": 49.99
+  },
+  {
+    "name": "Blanket 2",
+    "image": "images/blanket2.png",
+    "tags": ["furniture"],
+    "price": 49.99,
+    "salePrice": 34.99
+  },
+  {
+    "name": "Chair 1",
+    "image": "images/chair1.png",
+    "tags": ["furniture"],
+    "price": 49.99
+  },
+  {
+    "name": "Chair 2",
+    "image": "images/chair2.png",
+    "tags": ["furniture"],
+    "price": 149.99,
+    "salePrice": 119.99
+  },
+  {
+    "name": "Hat 1",
+    "image": "images/hat1.png",
+    "tags": ["accessories"]
+  },
+  {
+    "name": "Hat 2",
+    "image": "images/hat2.png",
+    "tags": ["accessories"],
+    "price": 24.99,
+    "salePrice": 19.99
+  },
+  {
+    "name": "Pants 1",
+    "image": "images/pants1.png",
+    "tags": ["apparel"],
+    "price": 24.99
+  },
+  {
+    "name": "Pants 2",
+    "image": "images/pants2.png",
+    "tags": ["apparel", "sale"],
+    "price": 44.99,
+    "salePrice": 34.99
+  },
+  {
+    "name": "Pants 3",
+    "image": "images/pants3.png",
+    "tags": ["apparel"],
+    "price": 44.99
+  },
+  {
+    "name": "Pillow 1",
+    "image": "images/pillow1.png",
+    "tags": ["furniture", "sale"],
+    "price": 29.99,
+    "salePrice": 24.99
+  },
+  {
+    "name": "Pillow 2",
+    "image": "images/pillow2.png",
+    "tags": ["furniture"],
+    "price": 29.99
+  },
+  {
+    "name": "Scarf 1",
+    "image": "images/scarf1.png",
+    "tags": ["accessories"],
+    "price": 29.9
+  },
+  {
+    "name": "Scarf 2",
+    "image": "images/scarf2.png",
+    "tags": ["accessories", "sale"],
+    "price": 19.99,
+    "salePrice": 14.99
+  },
+  {
+    "name": "Shirt 1",
+    "image": "images/shirt1.png",
+    "tags": ["apparel"],
+    "price": 19.99
+  },
+  {
+    "name": "Shirt 2",
+    "image": "images/shirt2.png",
+    "tags": ["apparel", "sale"],
+    "price": 34.99,
+    "salePrice": 29.99
+  },
+  {
+    "name": "Shirt 3",
+    "image": "images/shirt3.png",
+    "tags": ["apparel"],
+    "price": 34.99
+  },
+  {
+    "name": "Socks 1",
+    "image": "images/socks1.png",
+    "tags": ["accessories"],
+    "price": 14.99
+  },
+  {
+    "name": "Socks 2",
+    "image": "images/socks2.png",
+    "tags": ["accessories", "sale"],
+    "price": 12.99,
+    "salePrice": 9.99
+  },
+  {
+    "name": "Sweater 1",
+    "image": "images/sweater1.png",
+    "tags": ["apparel"],
+    "price": 42.99
+  },
+  {
+    "name": "Sweatshirt 1",
+    "image": "images/sweatshirt1.png",
+    "tags": ["apparel"],
+    "price": 42.99
+  },
+  {
+    "name": "Sweatshirt 2",
+    "image": "images/sweatshirt2.png",
+    "tags": ["apparel", "sale"],
+    "price": 44.99,
+    "salePrice": 39.99
+  }
+]
