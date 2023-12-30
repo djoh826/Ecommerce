@@ -28,7 +28,8 @@
   {
     "name": "Hat 1",
     "image": "images/hat1.png",
-    "tags": ["accessories"]
+    "tags": ["accessories"],
+    "price": 19.99
   },
   {
     "name": "Hat 2",

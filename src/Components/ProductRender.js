@@ -2,41 +2,83 @@ import React from 'react';
 import productsData from './items.json';
 
 const ProductRender = ({ tag }) => {
-  // Filter products based on the provided tag
-  const filteredProducts = productsData.filter(
-    (product) => product.tags && product.tags.includes(tag)
-  );
+  // Filter products based on tag
 
-  console.log('Filtered Products Length:', filteredProducts.length);
+  var filteredProducts;
+
+  if (tag === '') {
+    filteredProducts = productsData;
+  } else {
+    filteredProducts = productsData.filter(
+      (product) => product.tags && product.tags.includes(tag)
+    );
+  }
+
+  const productCards = filteredProducts.map((product) => (
+    <div
+      key={product.name}
+      className="product-card"
+      style={{ border: '1px solid rgb(124, 191, 236)', margin: '5px' }}>
+      <img
+        src={process.env.PUBLIC_URL + `/${product.image}`}
+        alt={product.name}
+        className="product-image"
+        style={{
+          maxWidth: '250px',
+          height: '100%',
+          margin: '2px',
+        }}
+      />
+      <div
+        className="product-details"
+        style={{
+          display: 'block',
+          textAlign: 'center',
+          alignItems: 'center',
+        }}>
+        <h3 style={{ fontSize: '1.4rem' }}>{product.name}</h3>
+        <p className="product-price" style={{}}>
+          {product.tags.includes('sale') ? (
+            <>
+              <span style={{ textDecoration: 'line-through' }}>
+                ${product.price}
+              </span>
+              <span style={{ fontWeight: 'bold' }}> ${product.salePrice}</span>
+            </>
+          ) : (
+            `$${product.price}`
+          )}
+        </p>
+      </div>
+    </div>
+  ));
+
+  // Calculate the number of items per row
+  const itemsPerRow = 4;
+
+  // Split the product cards into rows
+  const rows = [];
+  for (let i = 0; i < productCards.length; i += itemsPerRow) {
+    rows.push(
+      <div
+        key={`row-${i / itemsPerRow}`}
+        style={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          maxWidth: '100%',
+          maxHeight: '100%',
+        }}>
+        {productCards.slice(i, i + itemsPerRow)}
+      </div>
+    );
+  }
 
   return (
-    <div className="product-container">
-      {filteredProducts.map((product) => (
-        <div key={product.name} className="product-card">
-          <img
-            src={process.env.PUBLIC_URL + `/${product.image}`}
-            alt={product.name}
-            className="product-image"
-          />
-          <div className="product-details">
-            <h3>{product.name}</h3>
-            <p className="product-price">
-              {product.tags.includes('sale') ? (
-                <>
-                  <span className="discounted-price">
-                    ${product.salePrice.toFixed(2)}
-                  </span>
-                  <span className="original-price">
-                    ${product.price.toFixed(2)}
-                  </span>
-                </>
-              ) : (
-                `$${product.price.toFixed(2)}`
-              )}
-            </p>
-          </div>
-        </div>
-      ))}
+    <div
+      className="product-container"
+      style={{ maxWidth: '100%', margin: '0 10%' }}>
+      {rows}
     </div>
   );
 };
