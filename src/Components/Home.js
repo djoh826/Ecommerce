@@ -8,9 +8,10 @@ function Home() {
     //Navbar 2 (sale - apparel - accessories - furniture)
 
     //Hero - row of 3 things, (the 3 categories, but with captions)
+    //flexbox/grid?
 
-    //Feature 1
-    //Sale stuff
+    //Feature 1 (FeatureCard.js)
+    //Sale stuff (Scrolling bar)
     //Feature 2
 
     //Footer

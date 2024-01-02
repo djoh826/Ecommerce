@@ -20,7 +20,11 @@ function Navbar() {
   return (
     <div className={`header ${lockNavBar ? 'locked' : ''}`}>
       <Link to="/">
-        <img className="links" height={40} src={logoImage} alt="Logo"></img>
+        <img
+          className="links logo"
+          height={40}
+          src={logoImage}
+          alt="Logo"></img>
       </Link>
       <Link to="/collections" className="links">
         Shop All

@@ -4,14 +4,14 @@
   align-items: center;
   background-color: rgb(124, 191, 236);
   transition: height 0.1s linear;
-  height: 5rem;
+  height: 5.1rem;
   position: sticky;
   width: 100%;
   top: 0;
 }
 
 .header.locked {
-  height: 4rem !important;
+  height: 4.2rem !important;
 }
 
 .links {
@@ -26,7 +26,10 @@
   color: rgb(194, 194, 194);
 }
 
+.logo {
+  height: 60px;
+}
+
 .cart {
-  text-shadow: 2px 2px 1px rgb(107, 107, 107);
-  /* want a shadow here */
+  height: 50px;
 }
