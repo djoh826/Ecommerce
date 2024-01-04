@@ -25,7 +25,7 @@ const ProductRender = ({ tag }) => {
         className="product-image"
         style={{
           maxWidth: '250px',
-          height: '100%',
+          height: 'auto',
           margin: '2px',
         }}
       />
@@ -53,10 +53,8 @@ const ProductRender = ({ tag }) => {
     </div>
   ));
 
-  // Calculate the number of items per row
   const itemsPerRow = 4;
 
-  // Split the product cards into rows
   const rows = [];
   for (let i = 0; i < productCards.length; i += itemsPerRow) {
     rows.push(
@@ -77,7 +75,7 @@ const ProductRender = ({ tag }) => {
   return (
     <div
       className="product-container"
-      style={{ maxWidth: '100%', margin: '0 10%' }}>
+      style={{ maxWidth: '100%', margin: '1% 10%' }}>
       {rows}
     </div>
   );

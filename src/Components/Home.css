@@ -1,0 +1,30 @@
+/* styles.css */
+
+.hero {
+  display: flex;
+  height: 300px;
+  position: relative;
+  padding: 10px;
+  border: 1px solid black;
+  gap: 10px;
+}
+
+.left-half {
+  flex: 1;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.right-half {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 10px;
+}
+
+.right-top-right,
+.right-bottom-right {
+  flex: 1;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
