@@ -1,9 +1,9 @@
 // import { Link } from 'react-router-dom';
 // import Navbar from './Navbar.js';
 import './Home.css';
-// import h1 from '../Resources/t1.jpg';
-// import h2 from '../Resources/t3.jpg';
-// import h3 from '../Resources/t4.jpg';
+import hero1 from '../Resources/t1.jpg';
+import hero2 from '../Resources/t3.jpg';
+import hero3 from '../Resources/t4.jpg';
 
 function Home() {
   return (
@@ -21,10 +21,19 @@ function Home() {
     //Footer
     <body style={{ padding: '5%' }}>
       <div className="hero">
-        <div className="left-half">Left half</div>
+        <div className="left-half">
+          <img src={hero1} alt="Some pillows on a bedside" />
+        </div>
         <div className="right-half">
-          <div className="right-top-right">Right top right</div>
-          <div className="right-bottom-right">Right bottom right</div>
+          <div className="right-top-right">
+            <img src={hero2} alt="Two smiling women wearing sweaters" />
+          </div>
+          <div className="right-bottom-right">
+            <img
+              src={hero3}
+              alt="A stool surrounded by yarn-knit accessories"
+            />
+          </div>
         </div>
       </div>
     </body>

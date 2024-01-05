@@ -1,18 +1,28 @@
 /* styles.css */
 
 .hero {
+  align-self: center;
   display: flex;
-  height: 300px;
+  max-width: 1150px;
   position: relative;
   padding: 10px;
+  margin: auto;
   border: 1px solid black;
   gap: 10px;
+  box-sizing: border-box;
 }
 
 .left-half {
   flex: 1;
   border: 1px solid black;
-  box-sizing: border-box;
+  overflow: hidden; /* Prevent content overflow */
+}
+
+.left-half img {
+  width: 100%; /* Stretch the image to fit the container width */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove any extra spacing around the image */
+  object-fit: cover;
 }
 
 .right-half {
@@ -26,5 +36,13 @@
 .right-bottom-right {
   flex: 1;
   border: 1px solid black;
-  box-sizing: border-box;
+  overflow: hidden; /* Prevent content overflow */
+}
+
+.right-top-right img,
+.right-bottom-right img {
+  width: 100%; /* Stretch the image to fit the container width */
+  height: auto; /* Maintain aspect ratio */
+  display: block;
+  object-fit: cover;
 }
