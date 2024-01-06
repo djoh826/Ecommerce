@@ -15,19 +15,20 @@
 .left-half {
   flex: 1;
   border: 1px solid black;
-  overflow: hidden; /* Prevent content overflow */
+  overflow: hidden;
 }
 
 .left-half img {
-  width: 100%; /* Stretch the image to fit the container width */
-  height: auto; /* Maintain aspect ratio */
-  display: block; /* Remove any extra spacing around the image */
+  width: 100%;
+  height: 100%;
+  display: block;
   object-fit: cover;
 }
 
 .right-half {
   display: flex;
   flex-direction: column;
+  height: inherit;
   flex: 1;
   gap: 10px;
 }
@@ -36,13 +37,13 @@
 .right-bottom-right {
   flex: 1;
   border: 1px solid black;
-  overflow: hidden; /* Prevent content overflow */
+  overflow: hidden;
 }
 
 .right-top-right img,
 .right-bottom-right img {
-  width: 100%; /* Stretch the image to fit the container width */
-  height: auto; /* Maintain aspect ratio */
+  width: 100%;
+  height: 100%;
   display: block;
   object-fit: cover;
 }

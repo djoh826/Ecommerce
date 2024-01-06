@@ -19,7 +19,7 @@ function Home() {
     //Feature 2
 
     //Footer
-    <body style={{ padding: '5%' }}>
+    <body style={{ padding: '2% 5% 5% 5%' }}>
       <div className="hero">
         <div className="left-half">
           <img src={hero1} alt="Some pillows on a bedside" />
