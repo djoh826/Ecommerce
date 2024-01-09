@@ -14,7 +14,7 @@ function Home() {
     //Feature 2
 
     //Footer
-    <body style={{ padding: '2% 5% 5% 5%' }}>
+    <body style={{ padding: '1% 5% 5% 5%' }}>
       <div className="hero">
         <div className="left-half">
           <Link to="/furniture">
@@ -50,16 +50,29 @@ function Home() {
         </div>
       </div>
 
-      <h1 style={{ margin: '2.5% 0 1% 0' }}>Check out our sale!</h1>
       <div
-        className="sale-section"
-        style={{
-          overflowX: 'scroll',
-          overflowY: 'hidden',
-          display: 'flex',
-          padding: '0 0 0 25%', //"Magic number" fix
-        }}>
-        <ScrollingRender />
+        className="container"
+        style={{ maxWidth: '900px', margin: '0 auto' }}>
+        <h1
+          style={{
+            textAlign: 'left',
+            margin: '2.5% auto 1% ',
+          }}>
+          Check out our sale!
+        </h1>
+        <div
+          className="sale-section"
+          style={{
+            overflowX: 'scroll',
+            overflowY: 'hidden',
+            display: 'flex',
+            whiteSpace: 'nowrap',
+            alignSelf: 'center',
+            position: 'relative',
+            margin: 'auto',
+          }}>
+          <ScrollingRender />
+        </div>
       </div>
     </body>
   );
