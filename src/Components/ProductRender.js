@@ -36,7 +36,7 @@ const ProductRender = ({ tag }) => {
           textAlign: 'center',
           alignItems: 'center',
         }}>
-        <h3 style={{ fontSize: '1.4rem' }}>{product.name}</h3>
+        <h3 style={{ fontSize: '1.2rem' }}>{product.name}</h3>
         <p className="product-price" style={{}}>
           {product.tags.includes('sale') ? (
             <>

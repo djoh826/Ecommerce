@@ -1,134 +1,176 @@
 [
   {
-    "name": "Blanket 1",
+    "id": 1,
+    "name": "Elegant Comfort Blanket",
+    "description": "Cozy up with this stylish and soft blanket, perfect for adding warmth and comfort to your living space.",
     "image": "images/blanket1.png",
     "tags": ["furniture"],
     "price": 49.99
   },
   {
-    "name": "Blanket 2",
+    "id": 2,
+    "name": "Winter Blanket",
+    "description": "Embrace the warmth with our premium blanket, now available at a special discounted price. A perfect addition to your home decor.",
     "image": "images/blanket2.png",
     "tags": ["furniture"],
     "price": 49.99,
     "salePrice": 34.99
   },
   {
-    "name": "Chair 1",
+    "id": 3,
+    "name": "Modern Comfort Chair",
+    "description": "Upgrade your seating experience with this modern and comfortable chair, designed for both style and relaxation.",
     "image": "images/chair1.png",
     "tags": ["furniture"],
     "price": 49.99
   },
   {
-    "name": "Chair 2",
+    "id": 4,
+    "name": "Premium Lounge Chair",
+    "description": "Indulge in luxury with our high-quality chair, featuring a sleek design and currently on sale for a limited time.",
     "image": "images/chair2.png",
     "tags": ["furniture"],
     "price": 149.99,
     "salePrice": 119.99
   },
   {
-    "name": "Hat 1",
+    "id": 5,
+    "name": "Classic Hat",
+    "description": "Complete your look with this fashionable hat, blending style and practicality seamlessly.",
     "image": "images/hat1.png",
     "tags": ["accessories"],
     "price": 19.99
   },
   {
-    "name": "Hat 2",
+    "id": 6,
+    "name": "Bucket Hat",
+    "description": "Stay trendy and save with our discounted hat. A versatile accessory to elevate your fashion game.",
     "image": "images/hat2.png",
     "tags": ["accessories"],
     "price": 24.99,
     "salePrice": 19.99
   },
   {
-    "name": "Pants 1",
+    "id": 7,
+    "name": "Everyday Comfort Pants",
+    "description": "Experience comfort and style with these versatile pants, a wardrobe essential for every fashion-forward individual.",
     "image": "images/pants1.png",
     "tags": ["apparel"],
     "price": 24.99
   },
   {
-    "name": "Pants 2",
+    "id": 8,
+    "name": "Sleek Sweatpants",
+    "description": "Grab these stylish pants at a reduced price and stay on-trend without breaking the bank.",
     "image": "images/pants2.png",
     "tags": ["apparel", "sale"],
     "price": 44.99,
     "salePrice": 34.99
   },
   {
-    "name": "Pants 3",
+    "id": 9,
+    "name": "Comfy Trousers",
+    "description": "Elevate your wardrobe with these chic pants, perfect for casual and formal occasions alike.",
     "image": "images/pants3.png",
     "tags": ["apparel"],
     "price": 44.99
   },
   {
-    "name": "Pillow 1",
+    "id": 10,
+    "name": "Luxury Comfort Pillow",
+    "description": "Add a touch of elegance to your living space with our premium pillow, now available at a discounted price.",
     "image": "images/pillow1.png",
     "tags": ["furniture", "sale"],
     "price": 29.99,
     "salePrice": 24.99
   },
   {
-    "name": "Pillow 2",
+    "id": 11,
+    "name": "Chic Accent Pillow",
+    "description": "Enhance your home decor with this chic accent pillow, offering both style and comfort.",
     "image": "images/pillow2.png",
     "tags": ["furniture"],
     "price": 29.99
   },
   {
-    "name": "Scarf 1",
+    "id": 12,
+    "name": "Fashionable Scarf",
+    "description": "Stay cozy and stylish with this fashionable scarf, a must-have accessory for the colder seasons.",
     "image": "images/scarf1.png",
     "tags": ["accessories"],
     "price": 29.9
   },
   {
-    "name": "Scarf 2",
+    "id": 13,
+    "name": "Winter Warmth Scarf",
+    "description": "Bundle up in style with our discounted winter warmth scarf. Stay fashionable while staying warm.",
     "image": "images/scarf2.png",
     "tags": ["accessories", "sale"],
     "price": 19.99,
     "salePrice": 14.99
   },
   {
-    "name": "Shirt 1",
+    "id": 14,
+    "name": "Casual Shirt",
+    "description": "Achieve a casual yet chic look with this stylish shirt, a versatile addition to your wardrobe.",
     "image": "images/shirt1.png",
     "tags": ["apparel"],
     "price": 19.99
   },
   {
-    "name": "Shirt 2",
+    "id": 15,
+    "name": "Turtleneck Shirt",
+    "description": "Stay on-trend with our discounted casual shirt. A perfect blend of comfort and style.",
     "image": "images/shirt2.png",
     "tags": ["apparel", "sale"],
     "price": 34.99,
     "salePrice": 29.99
   },
   {
-    "name": "Shirt 3",
+    "id": 16,
+    "name": "Classic Style Shirt",
+    "description": "Elevate your wardrobe with this classic style shirt, suitable for various occasions.",
     "image": "images/shirt3.png",
     "tags": ["apparel"],
     "price": 34.99
   },
   {
-    "name": "Socks 1",
+    "id": 17,
+    "name": "Classy Socks",
+    "description": "Step into comfort with these everyday socks, designed for both style and relaxation.",
     "image": "images/socks1.png",
     "tags": ["accessories"],
     "price": 14.99
   },
   {
-    "name": "Socks 2",
+    "id": 18,
+    "name": "Cozy Winter Socks",
+    "description": "Keep your feet warm and stylish with our discounted cozy winter socks. A winter essential.",
     "image": "images/socks2.png",
     "tags": ["accessories", "sale"],
     "price": 12.99,
     "salePrice": 9.99
   },
   {
-    "name": "Sweater 1",
+    "id": 19,
+    "name": "Winter Sweater",
+    "description": "Stay warm and fashionable with this winter sweater, perfect for chilly days and evenings.",
     "image": "images/sweater1.png",
     "tags": ["apparel"],
     "price": 42.99
   },
   {
-    "name": "Sweatshirt 1",
+    "id": 20,
+    "name": "Green Sweatshirt",
+    "description": "Experience casual comfort with this stylish sweatshirt, a versatile addition to your wardrobe.",
     "image": "images/sweatshirt1.png",
     "tags": ["apparel"],
     "price": 42.99
   },
   {
-    "name": "Sweatshirt 2",
+    "id": 21,
+    "name": "Black Sweatshirt",
+    "description": "Embrace the winter season with our discounted cozy winter sweatshirt. Stay warm and stylish.",
     "image": "images/sweatshirt2.png",
     "tags": ["apparel", "sale"],
     "price": 44.99,

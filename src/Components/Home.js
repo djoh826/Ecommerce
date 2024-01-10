@@ -60,17 +60,7 @@ function Home() {
           }}>
           Check out our sale!
         </h1>
-        <div
-          className="sale-section"
-          style={{
-            overflowX: 'scroll',
-            overflowY: 'hidden',
-            display: 'flex',
-            whiteSpace: 'nowrap',
-            alignSelf: 'center',
-            position: 'relative',
-            margin: 'auto',
-          }}>
+        <div className="saleslider">
           <ScrollingRender />
         </div>
       </div>
