@@ -17,7 +17,7 @@ function Home() {
     <body style={{ padding: '1% 5% 5% 5%' }}>
       <div className="hero">
         <div className="left-half">
-          <Link to="/furniture">
+          <Link to="/shop/furniture">
             <img
               src={hero1}
               alt="Some pillows on a bedside"
@@ -28,7 +28,7 @@ function Home() {
         </div>
         <div className="right-half">
           <div className="right-top-right">
-            <Link to="/apparel">
+            <Link to="/shop/apparel">
               <img
                 src={hero2}
                 alt="Two smiling women wearing sweaters"
@@ -38,7 +38,7 @@ function Home() {
             <div className="caption">Fashionable Clothing</div>
           </div>
           <div className="right-bottom-right">
-            <Link to="/accessories">
+            <Link to="/shop/accessories">
               <img
                 src={hero3}
                 alt="A stool surrounded by yarn-knit accessories"
@@ -52,7 +52,7 @@ function Home() {
 
       <div
         className="container"
-        style={{ maxWidth: '900px', margin: '0 auto' }}>
+        style={{ maxWidth: '1000px', margin: '0 auto' }}>
         <h1
           style={{
             textAlign: 'left',

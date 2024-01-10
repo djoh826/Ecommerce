@@ -1,11 +1,7 @@
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import Home from './Components/Home';
-import Collections from './Components/Collections';
-import Sale from './Components/Sale';
-import Apparel from './Components/Apparel';
-import Accessories from './Components/Accessories';
-import Furniture from './Components/Furniture';
+import Shop from './Components/Shop';
 import Navbar from './Components/Navbar';
 import Footer from './Components/Footer';
 
@@ -16,11 +12,12 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
 
-        <Route path="collections" element={<Collections />} />
-        <Route path="sale" element={<Sale />} />
-        <Route path="apparel" element={<Apparel />} />
-        <Route path="accessories" element={<Accessories />} />
-        <Route path="furniture" element={<Furniture />} />
+        <Route path="shop" element={<Shop />}>
+          <Route path="sale" />
+          <Route path="apparel" />
+          <Route path="accessories" />
+          <Route path="furniture" />
+        </Route>
       </Routes>
       <Footer />
     </div>

@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "name": "Elegant Comfort Blanket",
+    "name": "Elegant Blanket",
     "description": "Cozy up with this stylish and soft blanket, perfect for adding warmth and comfort to your living space.",
     "image": "images/blanket1.png",
     "tags": ["furniture"],
@@ -18,7 +18,7 @@
   },
   {
     "id": 3,
-    "name": "Modern Comfort Chair",
+    "name": "Modern Chair",
     "description": "Upgrade your seating experience with this modern and comfortable chair, designed for both style and relaxation.",
     "image": "images/chair1.png",
     "tags": ["furniture"],
@@ -26,7 +26,7 @@
   },
   {
     "id": 4,
-    "name": "Premium Lounge Chair",
+    "name": "Lounge Chair",
     "description": "Indulge in luxury with our high-quality chair, featuring a sleek design and currently on sale for a limited time.",
     "image": "images/chair2.png",
     "tags": ["furniture"],
@@ -36,7 +36,7 @@
   {
     "id": 5,
     "name": "Classic Hat",
-    "description": "Complete your look with this fashionable hat, blending style and practicality seamlessly.",
+    "description": "Complete your look with this standard cap, blending style and practicality seamlessly.",
     "image": "images/hat1.png",
     "tags": ["accessories"],
     "price": 19.99
@@ -44,7 +44,7 @@
   {
     "id": 6,
     "name": "Bucket Hat",
-    "description": "Stay trendy and save with our discounted hat. A versatile accessory to elevate your fashion game.",
+    "description": "Stay trendy and save with our bucket hat. A versatile accessory to elevate your fashion game.",
     "image": "images/hat2.png",
     "tags": ["accessories"],
     "price": 24.99,
@@ -52,11 +52,11 @@
   },
   {
     "id": 7,
-    "name": "Everyday Comfort Pants",
+    "name": "Stylish Joggers",
     "description": "Experience comfort and style with these versatile pants, a wardrobe essential for every fashion-forward individual.",
     "image": "images/pants1.png",
     "tags": ["apparel"],
-    "price": 24.99
+    "price": 34.99
   },
   {
     "id": 8,
@@ -69,16 +69,16 @@
   },
   {
     "id": 9,
-    "name": "Comfy Trousers",
-    "description": "Elevate your wardrobe with these chic pants, perfect for casual and formal occasions alike.",
+    "name": "Pajama Bottoms",
+    "description": "Elevate your wardrobe with these pajama bottoms, perfect for dozing off and staying at home.",
     "image": "images/pants3.png",
     "tags": ["apparel"],
-    "price": 44.99
+    "price": 24.99
   },
   {
     "id": 10,
-    "name": "Luxury Comfort Pillow",
-    "description": "Add a touch of elegance to your living space with our premium pillow, now available at a discounted price.",
+    "name": "Plaid Pillow",
+    "description": "Add a touch of elegance to your living space with our plaid pillow, now available at a discounted price.",
     "image": "images/pillow1.png",
     "tags": ["furniture", "sale"],
     "price": 29.99,
@@ -86,8 +86,8 @@
   },
   {
     "id": 11,
-    "name": "Chic Accent Pillow",
-    "description": "Enhance your home decor with this chic accent pillow, offering both style and comfort.",
+    "name": "Teal Pillow",
+    "description": "Enhance your home decor with this teal pillow, offering both style and comfort.",
     "image": "images/pillow2.png",
     "tags": ["furniture"],
     "price": 29.99
@@ -120,7 +120,7 @@
   {
     "id": 15,
     "name": "Turtleneck Shirt",
-    "description": "Stay on-trend with our discounted casual shirt. A perfect blend of comfort and style.",
+    "description": "Stay on-trend with our turtleneck shirt. A perfect blend of comfort and style.",
     "image": "images/shirt2.png",
     "tags": ["apparel", "sale"],
     "price": 34.99,

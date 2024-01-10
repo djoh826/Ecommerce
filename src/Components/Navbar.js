@@ -26,19 +26,19 @@ function Navbar() {
           src={logoImage}
           alt="Logo"></img>
       </Link>
-      <Link to="/collections" className="links">
+      <Link to="/shop" className="links">
         Shop All
       </Link>
-      <Link to="/sale" className="links">
+      <Link to="/shop/sale" className="links">
         Sale
       </Link>
-      <Link to="/apparel" className="links">
+      <Link to="/shop/apparel" className="links">
         Apparel
       </Link>
-      <Link to="/accessories" className="links">
+      <Link to="/shop/accessories" className="links">
         Accessories
       </Link>
-      <Link to="/furniture" className="links">
+      <Link to="/shop/furniture" className="links">
         Furniture
       </Link>
       <Link to="/">
