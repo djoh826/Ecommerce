@@ -63,8 +63,6 @@ const ProductRender = () => {
         key={`row-${i / itemsPerRow}`}
         style={{
           display: 'flex',
-          // justifyContent: 'center',
-          // alignItems: 'center',
           maxWidth: '100%',
           maxHeight: '100%',
         }}>

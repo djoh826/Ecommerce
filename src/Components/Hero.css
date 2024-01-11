@@ -1,5 +1,3 @@
-/* styles.css */
-
 .hero {
   align-self: center;
   display: flex;
@@ -71,14 +69,4 @@
 .hover-anim:hover {
   transform: scale(1.05);
   filter: brightness(0.9);
-}
-
-.saleslider {
-  overflow-x: scroll;
-  overflow-y: hidden;
-  display: flex;
-  white-space: nowrap;
-  align-self: center;
-  position: relative;
-  margin: auto;
 }
