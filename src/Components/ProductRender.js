@@ -1,62 +1,23 @@
 import React from 'react';
+import ProductCard from './ProductCard';
 import productsData from './items.json';
 
 const ProductRender = ({ tag }) => {
   // Filter products based on tag
-
-  var filteredProducts;
-
-  if (tag === '') {
-    filteredProducts = productsData;
-  } else {
-    filteredProducts = productsData.filter(
-      (product) => product.tags && product.tags.includes(tag)
-    );
-  }
-
-  const productCards = filteredProducts.map((product) => (
-    <div
-      key={product.name}
-      className="product-card"
-      style={{ border: '1px solid rgb(124, 191, 236)', margin: '5px' }}>
-      <img
-        src={process.env.PUBLIC_URL + `/${product.image}`}
-        alt={product.name}
-        className="product-image"
-        style={{
-          maxWidth: '250px',
-          height: 'auto',
-          margin: '2px',
-        }}
-      />
-      <div
-        className="product-details"
-        style={{
-          display: 'block',
-          textAlign: 'center',
-          alignItems: 'center',
-        }}>
-        <h3 style={{ fontSize: '1.2rem' }}>{product.name}</h3>
-        <p className="product-price" style={{}}>
-          {product.tags.includes('sale') ? (
-            <>
-              <span style={{ textDecoration: 'line-through' }}>
-                ${product.price}
-              </span>
-              <span style={{ fontWeight: 'bold' }}> ${product.salePrice}</span>
-            </>
-          ) : (
-            `$${product.price}`
-          )}
-        </p>
-      </div>
-    </div>
-  ));
+  const filteredProducts =
+    tag === ''
+      ? productsData
+      : productsData.filter(
+          (product) => product.tags && product.tags.includes(tag)
+        );
 
   const itemsPerRow = 4;
 
   const rows = [];
-  for (let i = 0; i < productCards.length; i += itemsPerRow) {
+
+  for (let i = 0; i < filteredProducts.length; i += itemsPerRow) {
+    const rowProducts = filteredProducts.slice(i, i + itemsPerRow);
+
     rows.push(
       <div
         key={`row-${i / itemsPerRow}`}
@@ -66,8 +27,11 @@ const ProductRender = ({ tag }) => {
           alignItems: 'center',
           maxWidth: '100%',
           maxHeight: '100%',
+          position: 'relative',
         }}>
-        {productCards.slice(i, i + itemsPerRow)}
+        {rowProducts.map((product) => (
+          <ProductCard key={product.name} product={product} />
+        ))}
       </div>
     );
   }

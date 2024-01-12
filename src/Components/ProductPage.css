@@ -1,0 +1,44 @@
+.product-page {
+  width: 65%;
+  margin: 3% auto;
+}
+
+#centered {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.flexbox {
+  display: flex;
+  width: 100%;
+}
+
+.product-left {
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+  display: flex;
+}
+
+.product-right {
+  padding: 5% 0;
+  width: 100%;
+  height: auto;
+  border: 1px solid black;
+}
+
+.product-page-image {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.product-page-price {
+  font-size: 2rem;
+}
+
+.product-page-description {
+  padding: 0 5%;
+  font-size: 1.3rem;
+}

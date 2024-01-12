@@ -1,5 +1,4 @@
 // import Navbar from './Navbar.js';
-import './Home.css';
 import ScrollingRender from '../Components/ScrollingRender.js';
 import { Hero } from '../Components/Hero.js';
 
@@ -23,9 +22,7 @@ function Home() {
           }}>
           Check out our sale!
         </h1>
-        <div className="saleslider">
-          <ScrollingRender />
-        </div>
+        <ScrollingRender tag="sale" />
       </div>
     </main>
   );
