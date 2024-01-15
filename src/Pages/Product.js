@@ -6,9 +6,6 @@ import ScrollingRender from '../Components/ScrollingRender.js';
 
 function Product() {
   const location = useLocation();
-
-  //   const staticId = location.pathname.split('/')[2] || '';
-
   //Watches for the url changing to update the productId
   useEffect(() => {
     const pathSegments = location.pathname.split('/');

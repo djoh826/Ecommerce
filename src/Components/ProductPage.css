@@ -1,6 +1,8 @@
 .product-page {
-  width: 65%;
+  width: 75%;
   margin: 3% auto;
+  max-width: 1200px;
+  box-sizing: border-box;
 }
 
 #centered {
@@ -11,27 +13,27 @@
 .flexbox {
   display: flex;
   width: 100%;
+  position: relative;
 }
 
 .product-left {
-  width: 100%;
   height: 100%;
+  width: 50%;
   border: 1px solid black;
   display: flex;
 }
 
 .product-right {
   padding: 5% 0;
-  width: 100%;
-  height: auto;
+  width: 50%;
+  height: 100%;
   border: 1px solid black;
 }
 
 .product-page-image {
-  width: 80%;
-  height: auto;
+  height: 100%;
+  width: 75%;
   margin: 0 auto;
-  justify-content: center;
 }
 
 .product-page-price {
@@ -41,4 +43,15 @@
 .product-page-description {
   padding: 0 5%;
   font-size: 1.3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .flexbox {
+    flex-direction: column;
+  }
+
+  .product-left,
+  .product-right {
+    width: 100%;
+  }
 }
