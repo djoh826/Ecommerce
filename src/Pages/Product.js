@@ -23,7 +23,7 @@ function Product() {
     <>
       <ProductPage product={product} />
 
-      <div style={{ width: '65%', margin: '3% auto' }}>
+      <div style={{ width: '75%', margin: '3% auto' }}>
         {/* Split so it removes "sale" from "apparel,sale" */}
         <h2>Check out similar items:</h2>
         <ScrollingRender
