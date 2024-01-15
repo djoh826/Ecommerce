@@ -9,6 +9,9 @@ function ProductPage({ product }) {
   };
 
   const updatedPrice = (product.price * quantity).toFixed(2);
+  const updatedSalePrice = (product.salePrice * quantity).toFixed(2);
+
+  console.log(product.tags);
 
   return (
     <div key={product.name} className="product-page">
@@ -30,7 +33,21 @@ function ProductPage({ product }) {
               <span className="quantity">{quantity}</span>
               <button onClick={() => handleQuantityChange(1)}>+</button>
             </span>
-            <span className="product-page-price">{`$${updatedPrice}`}</span>
+            <span className="product-page-price">
+              {product.tags && product.tags.includes('sale') ? (
+                <>
+                  <span className="text-with-line-through">
+                    ${updatedPrice}
+                  </span>
+                  <span style={{ fontWeight: 'bold' }}>
+                    {' '}
+                    ${updatedSalePrice}
+                  </span>
+                </>
+              ) : (
+                `$${updatedPrice}`
+              )}
+            </span>
           </p>
         </div>
       </div>

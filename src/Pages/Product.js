@@ -17,7 +17,7 @@ function Product() {
 
   const [product, setProduct] = useState('');
 
-  console.log('These are the tags ' + product.tags);
+  // console.log('These are the tags ' + product.tags);
 
   return (
     <>

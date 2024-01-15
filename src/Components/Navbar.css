@@ -1,6 +1,7 @@
 .header {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   align-items: center;
   background-color: rgb(124, 191, 236);
   transition: height 0.1s linear;
@@ -33,4 +34,12 @@
 
 .cart {
   height: 50px;
+}
+
+@media screen and (max-width: 900px) {
+  .header,
+  .header.locked {
+    height: auto !important;
+    position: relative;
+  }
 }
