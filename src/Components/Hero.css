@@ -15,6 +15,7 @@
   /* border: 1px solid black; */
   overflow: hidden;
   position: relative;
+  border-radius: 10px;
 }
 
 .left-half img {
@@ -37,6 +38,7 @@
   /* border: 1px solid black; */
   overflow: hidden;
   position: relative;
+  border-radius: 10px;
 }
 
 .right-top-right img,

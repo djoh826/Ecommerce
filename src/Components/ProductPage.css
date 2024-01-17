@@ -70,18 +70,19 @@ h1 {
 .quantity-buttons {
   display: flex;
   align-items: center;
-  gap: 2px;
+  gap: 3px;
 }
 
 .quantity-buttons button,
 .quantity {
-  height: 1.9rem;
-  width: 1.9rem;
+  height: 2.1rem;
+  width: 2.1rem;
   background-color: white;
   border: none;
   cursor: pointer;
   font-size: 1.3rem;
   color: black;
+  border-radius: 5.7px;
 }
 
 .quantity-buttons button:hover {
