@@ -49,6 +49,10 @@ function ProductPage({ product }) {
               )}
             </span>
           </p>
+          <div className="buy-buttons ">
+            <button>Add to Cart</button>
+            <button>Purchase Now</button>
+          </div>
         </div>
       </div>
     </div>
