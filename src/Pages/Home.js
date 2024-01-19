@@ -1,6 +1,7 @@
 // import Navbar from './Navbar.js';
 import ScrollingRender from '../Components/ScrollingRender.js';
 import { Hero } from '../Components/Hero.js';
+import FeatureCard from '../Components/FeatureCard.js';
 
 function Home() {
   return (
@@ -12,13 +13,16 @@ function Home() {
     //Footer
     <main style={{ padding: '1% 5% 5% 5%' }}>
       <Hero />
+
       <div
         className="container"
         style={{ maxWidth: '1000px', margin: '0 auto' }}>
+        <FeatureCard />
         <h1
           style={{
             textAlign: 'left',
-            margin: '2.5% auto 1% ',
+            margin: '2.5% 0 1% ',
+            color: 'rgb(124, 191, 236)',
           }}>
           Check out our sale!
         </h1>

@@ -9,7 +9,7 @@
 }
 
 .hover-anim:hover {
-  transform: scale(1.03);
+  transform: scale(1.025);
   filter: brightness(1);
 }
 

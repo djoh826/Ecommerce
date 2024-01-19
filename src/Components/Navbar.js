@@ -1,7 +1,5 @@
 import { Link } from 'react-router-dom';
 import './Navbar.css';
-import logoImage from '../Resources/logoResized.png';
-import cartImage from '../Resources/cart.png';
 import { useState } from 'react';
 
 function Navbar() {
@@ -23,7 +21,7 @@ function Navbar() {
         <img
           className="links logo"
           height={40}
-          src={logoImage}
+          src={process.env.PUBLIC_URL + '/images/logoResized.png'}
           alt="Logo"></img>
       </Link>
       <Link to="/shop" className="links">
@@ -45,7 +43,7 @@ function Navbar() {
         <img
           className="links cart"
           height={40}
-          src={cartImage}
+          src={process.env.PUBLIC_URL + '/images/cart.png'}
           alt="Cart"></img>
       </Link>
     </div>

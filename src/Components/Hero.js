@@ -1,7 +1,4 @@
 import { Link } from 'react-router-dom';
-import hero1 from '../Resources/t1.jpg';
-import hero2 from '../Resources/t3.jpg';
-import hero3 from '../Resources/t4.jpg';
 import './Hero.css';
 
 export function Hero() {
@@ -10,7 +7,7 @@ export function Hero() {
       <div className="left-half">
         <Link to="/shop/furniture">
           <img
-            src={hero1}
+            src={process.env.PUBLIC_URL + '/images/t1.jpg'}
             alt="Some pillows on a bedside"
             className="hover-anim"
           />
@@ -21,7 +18,7 @@ export function Hero() {
         <div className="right-top-right">
           <Link to="/shop/apparel">
             <img
-              src={hero2}
+              src={process.env.PUBLIC_URL + '/images/t3.jpg'}
               alt="Two smiling women wearing sweaters"
               className="hover-anim"
             />
@@ -31,7 +28,7 @@ export function Hero() {
         <div className="right-bottom-right">
           <Link to="/shop/accessories">
             <img
-              src={hero3}
+              src={process.env.PUBLIC_URL + '/images/t4.jpg'}
               alt="A stool surrounded by yarn-knit accessories"
               className="hover-anim"
             />

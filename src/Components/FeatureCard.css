@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
+.feature-card {
+  background-color: rgb(124, 191, 236);
+  border-radius: 10px;
+  margin: 2% 0;
+  display: flex;
+  color: white;
+  position: relative;
+}
+
+.feature-left-half {
+  flex: 1;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.feature-left-half img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px 0 0 10px;
+}
+
+.feature-right-half {
+  padding: 1% 6%;
+  flex: 1;
+}
