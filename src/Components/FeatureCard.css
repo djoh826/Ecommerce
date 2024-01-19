@@ -25,6 +25,42 @@
 }
 
 .feature-right-half {
-  padding: 1% 6%;
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.right-container {
+  padding: 0 15%;
+}
+
+.right-container h2 {
+  margin-top: 0;
+  font-size: 1.8rem;
+}
+
+.right-container p {
+  font-size: 1.2rem;
+}
+
+.center-container {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  /* padding-top: 4%; */
+}
+
+.center-container button {
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 1% 3%;
+  border-radius: 7px;
+  color: rgb(124, 191, 236);
+}
+
+.center-container button:hover {
+  background-color: rgb(240, 240, 240);
 }
