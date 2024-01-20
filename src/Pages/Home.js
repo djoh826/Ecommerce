@@ -2,6 +2,8 @@
 import ScrollingRender from '../Components/ScrollingRender.js';
 import { Hero } from '../Components/Hero.js';
 import FeatureCard from '../Components/FeatureCard.js';
+import Newsletter from '../Components/Newsletter.js';
+import { Link } from 'react-router-dom';
 
 function Home() {
   return (
@@ -17,16 +19,44 @@ function Home() {
       <div
         className="container"
         style={{ maxWidth: '1000px', margin: '0 auto' }}>
-        <FeatureCard />
-        <h1
+        <Newsletter />
+        <div
           style={{
-            textAlign: 'left',
-            margin: '2.5% 0 1% ',
-            color: 'rgb(124, 191, 236)',
+            display: 'flex',
+            justifyContent: 'space-between',
+            alignItems: 'center',
           }}>
-          Check out our sale!
-        </h1>
+          <h1
+            style={{
+              textAlign: 'left',
+              margin: '1% 0 ',
+              color: 'rgb(47, 47, 47)',
+              fontSize: '2rem',
+            }}>
+            Check out our sale!
+          </h1>
+          <div style={{ marginLeft: 'auto', marginRight: '2.5%' }}>
+            <Link to="/shop/sale">
+              <button
+                style={{
+                  height: '100%',
+                  fontSize: '1.9rem',
+                  backgroundColor: 'rgb(124, 191, 236)',
+                  border: 'none',
+                  color: 'white',
+                  borderRadius: '5px',
+                  whiteSpace: 'nowrap',
+                  padding: '1% 5%',
+                  cursor: 'pointer',
+                }}>
+                Shop our Sale
+              </button>
+            </Link>
+          </div>
+        </div>
+
         <ScrollingRender tag="sale" />
+        <FeatureCard />
       </div>
     </main>
   );

@@ -11,8 +11,6 @@ function ProductPage({ product }) {
   const updatedPrice = (product.price * quantity).toFixed(2);
   const updatedSalePrice = (product.salePrice * quantity).toFixed(2);
 
-  console.log(product.tags);
-
   return (
     <div key={product.name} className="product-page">
       <div className="flexbox">
