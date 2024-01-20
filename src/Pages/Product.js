@@ -4,7 +4,7 @@ import productsData from '../Components/items.json';
 import ProductPage from '../Components/ProductPage';
 import ScrollingRender from '../Components/ScrollingRender.js';
 
-function Product() {
+function Product({ updateCart }) {
   const location = useLocation();
   //Watches for the url changing to update the productId
   useEffect(() => {
@@ -21,7 +21,7 @@ function Product() {
 
   return (
     <>
-      <ProductPage product={product} />
+      <ProductPage product={product} updateCart={updateCart} />
 
       <div style={{ width: '75%', margin: '3% auto' }}>
         {/* Split so it removes "sale" from "apparel,sale" */}

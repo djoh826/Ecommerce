@@ -36,6 +36,23 @@
   height: 50px;
 }
 
+.cart-icon {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.cart-interface {
+  position: fixed;
+  z-index: 1000;
+  right: 0;
+  min-width: 15%;
+  min-height: 20%;
+  background-color: white;
+  border: 5px solid rgb(248, 202, 138);
+  border-radius: 0 0 0 3px;
+}
+
 @media screen and (max-width: 900px) {
   .header,
   .header.locked {

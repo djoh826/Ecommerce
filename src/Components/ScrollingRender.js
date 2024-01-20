@@ -2,8 +2,8 @@ import React from 'react';
 import ProductCard from './ProductCard';
 import productsData from './items.json';
 
-const ScrollingRender = ({ tag, ignoreId }) => {
-  // Filter products based on tag and ignoreId
+const ScrollingRender = React.memo(({ tag, ignoreId }) => {
+  // Memo makes it only rerender when the props are changed
   const filteredProducts = productsData.filter(
     (product) =>
       (tag === '' || (product.tags && product.tags.includes(tag))) &&
@@ -37,6 +37,6 @@ const ScrollingRender = ({ tag, ignoreId }) => {
       ))}
     </div>
   );
-};
+});
 
 export default ScrollingRender;

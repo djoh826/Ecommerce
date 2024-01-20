@@ -1,11 +1,15 @@
 import { useState } from 'react';
 import './ProductPage.css';
 
-function ProductPage({ product }) {
+function ProductPage({ product, updateCart }) {
   const [quantity, setQuantity] = useState(1);
 
   const handleQuantityChange = (amount) => {
     setQuantity(Math.max(quantity + amount, 1));
+  };
+
+  const addCart = () => {
+    updateCart(product.id, quantity);
   };
 
   const updatedPrice = (product.price * quantity).toFixed(2);
@@ -48,7 +52,7 @@ function ProductPage({ product }) {
             </span>
           </p>
           <div className="buy-buttons ">
-            <button>Add to Cart</button>
+            <button onClick={addCart}>Add to Cart</button>
             <button>Purchase Now</button>
           </div>
         </div>
