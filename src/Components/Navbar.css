@@ -47,10 +47,44 @@
   z-index: 1000;
   right: 0;
   min-width: 15%;
+  max-width: 25%;
   min-height: 20%;
+  max-height: 40%;
+  overflow-y: scroll;
   background-color: white;
-  border: 5px solid rgb(248, 202, 138);
+  border: 5px solid rgb(250, 222, 182);
   border-radius: 0 0 0 3px;
+}
+
+.cart-empty {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.cart-entry {
+  display: flex;
+  gap: 6px;
+}
+/* 
+.cart-entry-left {
+  flex: 1;
+} */
+
+.cart-entry-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-height: 160px;
+  max-width: 160px;
+}
+
+.cart-entry-right {
+  flex: 1;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 
 @media screen and (max-width: 900px) {

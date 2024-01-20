@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 import { useState } from 'react';
+import productsData from './items.json';
 
 function Navbar({ cart }) {
   const [lockNavBar, setLockNavBar] = useState(false);
@@ -56,14 +57,41 @@ function Navbar({ cart }) {
       {displayCart ? (
         <div className="cart-interface">
           {cart.size === 0 ? (
-            <p>Cart is empty.</p>
+            <p className="cart-empty">Cart is empty.</p>
           ) : (
             <>
-              {Array.from(cart.entries()).map(([key, value]) => (
-                <p key={key}>
-                  Product ID: {key}, Quantity: {value}
-                </p>
-              ))}
+              {Array.from(cart.entries()).map(([id, quantity]) => {
+                const product = productsData.find(
+                  (product) => product.id === id
+                );
+
+                if (!product) {
+                  return null;
+                }
+
+                return (
+                  <div className="cart-entry" key={id}>
+                    <div className="cart-entry-left">
+                      <img
+                        className="cart-entry-image"
+                        src={`${process.env.PUBLIC_URL}/${product.image}`}
+                        alt={product.name}
+                      />
+                    </div>
+                    <div className="cart-entry-right">
+                      <div className="name-x-quantity">
+                        {product.name} x{quantity}
+                      </div>
+                      <div className="price">
+                        $
+                        {(
+                          (product.salePrice || product.price) * quantity
+                        ).toFixed(2)}
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
             </>
           )}
         </div>
