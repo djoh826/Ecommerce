@@ -66,6 +66,8 @@
 
 .cart-buttons {
   background-color: white;
+  text-align: center;
+  font-size: 1.3rem;
 }
 
 .cart-empty {

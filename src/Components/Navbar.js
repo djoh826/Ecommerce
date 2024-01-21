@@ -37,6 +37,31 @@ function Navbar({ cart }) {
     }
   };
 
+  function calculateSubtotal() {
+    return [...cart]
+      .reduce((sum, [id, quantity]) => {
+        const product = productsData.find((product) => product.id === id);
+        return sum + (product.salePrice || product.price) * quantity;
+      }, 0)
+      .toFixed(2);
+  }
+
+  function taxTotal() {
+    return (
+      <>
+        <div>Subtotal: ${calculateSubtotal()}</div>
+        <div>Tax: ${(calculateSubtotal() * 0.0825).toFixed(2)}</div>
+        <div>
+          Total: $
+          {(
+            parseFloat((calculateSubtotal() * 0.0825).toFixed(2)) +
+            parseFloat(calculateSubtotal())
+          ).toFixed(2)}
+        </div>
+      </>
+    );
+  }
+
   return (
     <>
       <div className={`header ${lockNavBar ? 'locked' : ''}`}>
@@ -125,6 +150,8 @@ function Navbar({ cart }) {
             )}
           </div>
           <div className="cart-buttons">
+            {taxTotal()}
+            <button>Button</button>
             <button>Button</button>
           </div>
         </div>
