@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .header {
   display: flex;
   justify-content: space-around;
@@ -48,12 +52,20 @@
   right: 0;
   min-width: 15%;
   max-width: 25%;
-  min-height: 20%;
-  max-height: 40%;
-  overflow-y: scroll;
-  background-color: white;
   border: 5px solid rgb(250, 222, 182);
   border-radius: 0 0 0 3px;
+}
+
+.cart-entries {
+  position: relative;
+  min-height: 20vh;
+  max-height: 40vh;
+  overflow-y: scroll;
+  background-color: white;
+}
+
+.cart-buttons {
+  background-color: white;
 }
 
 .cart-empty {
@@ -73,7 +85,7 @@
 .cart-entry-left img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  /* object-fit: cover; */
   max-height: 160px;
   max-width: 160px;
 }

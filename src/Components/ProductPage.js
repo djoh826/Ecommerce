@@ -4,8 +4,8 @@ import './ProductPage.css';
 function ProductPage({ product, updateCart }) {
   const [quantity, setQuantity] = useState(1);
 
-  const handleQuantityChange = (amount) => {
-    setQuantity(Math.max(quantity + amount, 1));
+  const handleQuantityChange = (delta) => {
+    setQuantity(Math.max(quantity + delta, 1));
   };
 
   const addCart = () => {
