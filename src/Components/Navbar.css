@@ -101,6 +101,28 @@
   text-align: center;
 }
 
+.space-around {
+  display: flex;
+  justify-content: space-between;
+  padding: 1% 5%;
+  gap: 10%;
+}
+
+.space-around span {
+  flex: 1;
+}
+
+.cart-buttons button {
+  border: none;
+  cursor: pointer;
+  background: rgb(124, 191, 236);
+  color: white;
+  border-radius: 2px;
+  font-size: 1.7rem;
+  height: 100%;
+  width: 80%;
+}
+
 @media screen and (max-width: 900px) {
   .header,
   .header.locked {

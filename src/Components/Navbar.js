@@ -151,8 +151,15 @@ function Navbar({ cart }) {
           </div>
           <div className="cart-buttons">
             {taxTotal()}
-            <button>Button</button>
-            <button>Button</button>
+            <div className="space-around">
+              <span>
+                <label style={{ fontSize: '1.3rem' }}>Promo Code:</label>
+                <input type="text"></input>
+              </span>
+              <span>
+                <button>Checkout</button>
+              </span>
+            </div>
           </div>
         </div>
       ) : (
