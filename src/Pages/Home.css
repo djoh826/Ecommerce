@@ -1,0 +1,50 @@
+main {
+  padding: 1% 5% 1% 5%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.sale-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sale-info h1 {
+  text-align: left;
+  margin: 1% 0 0;
+  color: rgb(47, 47, 47);
+  font-size: 2rem;
+}
+
+.sale-info div {
+  margin-left: auto;
+  margin-right: 2.5%;
+}
+
+.sale-info button {
+  height: 100%;
+  font-size: 1.9rem;
+  background-color: rgb(124, 191, 236);
+  border: none;
+  color: white;
+  border-radius: 5px;
+  white-space: nowrap;
+  padding: 1% 5%;
+  cursor: pointer;
+}
+
+.sale-info button:hover {
+  background-color: rgb(148, 201, 236);
+}
+
+.sale-info button:active {
+  background-color: rgb(173, 210, 235);
+}

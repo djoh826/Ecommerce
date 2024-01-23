@@ -6,7 +6,7 @@ import productsData from './items.json';
 function Navbar({ cart }) {
   const [lockNavBar, setLockNavBar] = useState(false);
   const [displayCart, setDisplayCart] = useState(false);
-  const [, forceUpdate] = useState(); // Use state hook to create a forceUpdate function
+  const [, refreshCart] = useState(); // lazy fix
 
   const toggleCart = () => {
     setDisplayCart(!displayCart);
@@ -27,12 +27,12 @@ function Navbar({ cart }) {
     if (cart.get(id) === 1) {
       if (delta > 0) {
         cart.set(id, cart.get(id) + delta);
-        forceUpdate({});
+        refreshCart({}); // lazy fix
         console.log(`NEW Id = ${id} , quantity = ${cart.get(id)}`);
       }
     } else {
       cart.set(id, cart.get(id) + delta);
-      forceUpdate({});
+      refreshCart({});
       console.log(`NEW Id = ${id} , quantity = ${cart.get(id)}`);
     }
   };
@@ -52,10 +52,14 @@ function Navbar({ cart }) {
         <div>Subtotal: ${calculateSubtotal()}</div>
         <div>Tax: ${(calculateSubtotal() * 0.0825).toFixed(2)}</div>
         <div>
+          Shipping: {calculateSubtotal() > 75 ? <>Free!</> : <>$15.00</>}
+        </div>
+        <div>
           Total: $
           {(
             parseFloat((calculateSubtotal() * 0.0825).toFixed(2)) +
-            parseFloat(calculateSubtotal())
+            parseFloat(calculateSubtotal()) +
+            parseFloat(calculateSubtotal() > 75 ? 0 : 15.0)
           ).toFixed(2)}
         </div>
       </>

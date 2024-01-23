@@ -12,6 +12,7 @@
   flex-direction: column;
   align-items: center;
   text-shadow: 1px 1px 2px black;
+  position: relative;
 }
 
 .newsletter-container * {
@@ -42,7 +43,29 @@
   border: 2px rgb(192, 192, 192) solid;
 }
 
-.newsletter-container button {
+.sign-up {
+  border: none;
+}
+
+.close-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: white;
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+.button-fx {
   cursor: pointer;
   border: none;
+  background-color: white;
+}
+
+.button-fx:hover {
+  background-color: rgb(230, 230, 230);
+}
+
+.button-fx:active {
+  background-color: rgb(190, 190, 190);
 }

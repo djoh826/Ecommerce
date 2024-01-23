@@ -117,10 +117,18 @@
   cursor: pointer;
   background: rgb(124, 191, 236);
   color: white;
-  border-radius: 2px;
+  border-radius: 8px;
   font-size: 1.7rem;
   height: 100%;
   width: 80%;
+}
+
+.cart-buttons button:hover {
+  background: rgb(156, 207, 241);
+}
+
+.cart-buttons button:active {
+  background: rgb(188, 220, 241);
 }
 
 @media screen and (max-width: 900px) {
