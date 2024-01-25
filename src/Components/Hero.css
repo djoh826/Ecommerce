@@ -1,7 +1,8 @@
 .hero {
   align-self: center;
   display: flex;
-  max-width: 1000px;
+  min-width: 47vw;
+  max-width: 1200px;
   position: relative;
   /* padding: 10px; */
   margin: auto;

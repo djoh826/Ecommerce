@@ -7,7 +7,8 @@ main {
 }
 
 .container {
-  max-width: 1000px;
+  min-width: 47vw;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
