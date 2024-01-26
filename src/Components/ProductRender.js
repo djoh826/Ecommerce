@@ -11,36 +11,22 @@ const ProductRender = ({ tag }) => {
           (product) => product.tags && product.tags.includes(tag)
         );
 
-  const itemsPerRow = 4;
-
-  const rows = [];
-
-  for (let i = 0; i < filteredProducts.length; i += itemsPerRow) {
-    const rowProducts = filteredProducts.slice(i, i + itemsPerRow);
-
-    rows.push(
-      <div
-        key={`row-${i / itemsPerRow}`}
-        style={{
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          maxWidth: '100%',
-          maxHeight: '100%',
-          position: 'relative',
-        }}>
-        {rowProducts.map((product) => (
-          <ProductCard key={product.name} product={product} />
-        ))}
-      </div>
-    );
-  }
-
   return (
     <div
       className="product-container"
-      style={{ maxWidth: '100%', margin: '1% 10%' }}>
-      {rows}
+      style={{
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        maxWidth: '1048px',
+        maxHeight: '100%',
+        position: 'relative',
+        flexWrap: 'wrap',
+        margin: '1% auto',
+      }}>
+      {filteredProducts.map((product) => (
+        <ProductCard key={product.name} product={product} />
+      ))}
     </div>
   );
 };
