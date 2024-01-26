@@ -157,7 +157,7 @@ function Navbar({ cart }) {
             {taxTotal()}
             <div className="space-around">
               <span>
-                <label style={{ fontSize: '1.3rem' }}>Promo Code:</label>
+                <label style={{ fontSize: '1.3rem' }}>Promo Code: </label>
                 <input type="text"></input>
               </span>
               <span>

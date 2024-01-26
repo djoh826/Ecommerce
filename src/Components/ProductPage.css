@@ -141,4 +141,8 @@ h1 {
   .product-right {
     width: 100%;
   }
+
+  .product-page-image {
+    width: 75%;
+  }
 }

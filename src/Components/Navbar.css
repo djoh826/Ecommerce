@@ -14,6 +14,7 @@
   width: 100%;
   top: 0;
   z-index: 1000; /* Adjust the value based on your needs */
+  gap: 1rem;
 }
 
 .header.locked {
@@ -50,8 +51,7 @@
   position: fixed;
   z-index: 1000;
   right: 0;
-  min-width: 15%;
-  max-width: 25%;
+  min-width: 15vw;
   border: 5px solid rgb(250, 222, 182);
   border-radius: 0 0 0 3px;
 }
@@ -131,10 +131,13 @@
   background: rgb(188, 220, 241);
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 950px) {
   .header,
   .header.locked {
     height: auto !important;
+    position: relative;
+  }
+  .cart-interface {
     position: relative;
   }
 }
