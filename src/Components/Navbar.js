@@ -24,17 +24,19 @@ function Navbar({ cart }) {
 
   const handleQuantityChange = (id, delta) => {
     console.log(`Id = ${id} , quantity = ${cart.get(id)}`);
-    if (cart.get(id) === 1) {
-      if (delta > 0) {
-        cart.set(id, cart.get(id) + delta);
-        refreshCart({}); // lazy fix
-        console.log(`NEW Id = ${id} , quantity = ${cart.get(id)}`);
-      }
+
+    const newQuantity = cart.get(id) + delta;
+
+    if (newQuantity <= 0) {
+      // If quantity is 0 or negative, delete the item
+      cart.delete(id);
     } else {
-      cart.set(id, cart.get(id) + delta);
-      refreshCart({});
-      console.log(`NEW Id = ${id} , quantity = ${cart.get(id)}`);
+      // Otherwise, update the quantity
+      cart.set(id, newQuantity);
     }
+
+    refreshCart({}); // lazy fix
+    console.log(`NEW Id = ${id} , quantity = ${cart.get(id)}`);
   };
 
   function calculateSubtotal() {
@@ -56,11 +58,15 @@ function Navbar({ cart }) {
         </div>
         <div>
           Total: $
-          {(
-            parseFloat((calculateSubtotal() * 0.0825).toFixed(2)) +
-            parseFloat(calculateSubtotal()) +
-            parseFloat(calculateSubtotal() > 75 ? 0 : 15.0)
-          ).toFixed(2)}
+          {calculateSubtotal() === 0 ? (
+            <>0.00</>
+          ) : (
+            (
+              parseFloat((calculateSubtotal() * 0.0825).toFixed(2)) +
+              parseFloat(calculateSubtotal()) +
+              parseFloat(calculateSubtotal() > 75 ? 0 : 15.0)
+            ).toFixed(2)
+          )}
         </div>
       </>
     );
@@ -117,6 +123,11 @@ function Navbar({ cart }) {
 
                   return (
                     <div className="cart-entry" key={id}>
+                      <button
+                        className="close-cart-entry" // Button to close
+                        onClick={() => handleQuantityChange(product.id, -999)}>
+                        X
+                      </button>
                       <div className="cart-entry-left">
                         <img
                           className="cart-entry-image"
