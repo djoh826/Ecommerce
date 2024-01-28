@@ -1,6 +1,7 @@
 import React from 'react';
 import ProductCard from './ProductCard';
 import productsData from './items.json';
+import './ProductRender.css';
 
 const ProductRender = ({ tag }) => {
   // Filter products based on tag
@@ -12,18 +13,7 @@ const ProductRender = ({ tag }) => {
         );
 
   return (
-    <div
-      className="product-container"
-      style={{
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        maxWidth: '1048px',
-        maxHeight: '100%',
-        position: 'relative',
-        flexWrap: 'wrap',
-        margin: '1% auto',
-      }}>
+    <div className="products-rows-render">
       {filteredProducts.map((product) => (
         <ProductCard key={product.name} product={product} />
       ))}

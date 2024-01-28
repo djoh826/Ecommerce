@@ -1,1 +1,12 @@
 /* Make this an actual grid that scales with zoom */
+
+.products-rows-render {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1048px;
+  max-height: 100%;
+  position: relative;
+  flex-wrap: wrap;
+  margin: 1% auto;
+}

@@ -127,14 +127,6 @@
     "salePrice": 29.99
   },
   {
-    "id": 16,
-    "name": "Classic Style Shirt",
-    "description": "Elevate your wardrobe with this classic style shirt, suitable for various occasions.",
-    "image": "images/shirt3.png",
-    "tags": ["apparel"],
-    "price": 34.99
-  },
-  {
     "id": 17,
     "name": "Classy Socks",
     "description": "Step into comfort with these everyday socks, designed for both style and relaxation.",

@@ -10,7 +10,7 @@ const ScrollingRender = React.memo(({ tag, ignoreId }) => {
       product.id !== ignoreId
   );
 
-  // Randomize the order of the filtered products using Fisher-Yates shuffle
+  // Fisher-Yates shuffle
   const shuffledProducts = [...filteredProducts];
   for (let i = shuffledProducts.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
