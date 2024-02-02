@@ -2,7 +2,7 @@
 ## An Ecommerce clone
 Deployed at https://comfymarket.netlify.app/
 
-A create-react-app website using only React (Routing and Hooks) and Javascript.
+A create-react-app website using only React (Routing and Hooks) and Javascript. Images are sourced from royalty-free stock images online.
 
 ## Home page
 
